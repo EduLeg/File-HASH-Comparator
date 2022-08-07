@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet"></head>
+    
+</head>
+<body>
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">
+                    File HASH Comparator
+                </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="text-center">
+                    Compare two files and see if they are the same using HASH SHA256 algorithm.
+                </h5>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">File 1</h4>
+                        <img id="file1Img" style="height:70px; width:70px;">
+                        <p class="card-text"><strong> File HASH:</strong><br>
+                        <p id="file1HASH"></p>
+                        </p>
+                        <input type="file" name="file1" id="file1" class="form-control"> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body" style="text-align: center; ">
+                        <a href="#" id="compare" class="btn btn-primary">Compare</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">File 2</h4>
+                        <img id="file2Img" style="height:70px; width:70px;">
+                        <p class="card-text"><strong> File HASH:</strong><br>
+                            <p id="file2HASH"></p>
+                            </p>
+                        <input type="file" name="file2" id="file2" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+
+<script src="node_modules/crypto-js/crypto-js.js"></script>
+<script src="index.js"></script>
+</html>
